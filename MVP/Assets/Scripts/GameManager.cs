@@ -23,19 +23,13 @@ public class GameManager : MonoBehaviour {
     private bool game = true;
     private bool lost = false;
 
-   
+
+    public RectTransform mPanelGameOver;
+    public Text GameOverText; 
     private bool mGameOver = false; 
 
     private int parcial = 0;
     // Use this for initialization
-
-    public event EventHandler GameOverEvent;
-
-    private void onGameOver()
-    {
-        if (GameOverEvent != null)
-            GameOverEvent(this, EventArgs.Empty); 
-    }
 
     void Start () {
         // inicializo las diferenciales de tiempo para que no haya falsos positivos
@@ -64,6 +58,7 @@ public class GameManager : MonoBehaviour {
                 {
                     game = false;
                     lost = true;
+                    GameOver(2);
                 }
 
             }
@@ -79,6 +74,8 @@ public class GameManager : MonoBehaviour {
                 {
 
                     game = false;
+                    GameOver(1);
+
                 }
                 else
                     UnityEngine.Debug.Log( "Parcial: " + parcial);
@@ -90,33 +87,25 @@ public class GameManager : MonoBehaviour {
         
     }
 
-    public bool IsGameOver
-    {
-        get { retur mGameOver; }
-    }
 
-   public bool IsWon
+   
+
+    void GameOver(int status)
     {
-        get
+        mPanelGameOver.gameObject.SetActive(true);
+        if (status == 1)
         {
-            if (money < 0 || grades < 0 || party < 0 || health < 0)
-                return false;
+            GameOverText.text = "You Graduated !";
 
-            return true; 
         }
+        else
+            GameOverText.text = "You were expelled";
     }
-
     void SetText()
     {
         if (game == true){
             variablesText.text = "Money: " + money.ToString() + "/ 100   Grades: " + grades.ToString() + "/100   Party: " + party.ToString() + " / 100   Sleep: " + sleep.ToString() + " / 100";
             partialText.text = "Partial: " + (parcial+1).ToString();
-        } else
-        {
-            if (lost == false)
-                variablesText.text = "Congratulations , you have finished the Semester ";
-            else
-                variablesText.text = "Sorry you were expelled from Itesm";
-        }
+        } 
     }
 }
