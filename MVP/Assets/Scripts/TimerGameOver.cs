@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+/*
 public class TimerGameOver : MonoBehaviour {
     public int countDownStartValue = 5; 
 
@@ -31,3 +31,4 @@ public class TimerGameOver : MonoBehaviour {
 		
 	} 
 }
+*/

@@ -12,6 +12,7 @@ public class Stats : MonoBehaviour {
     
 
     public Text variablesText; // texto desplegando variables 
+    public Text partialText; // texto desplegando el parcial 
 
     private float nextActionTimeVar = 0.0f; // siguiente timer para restar a 
     public float periodVariables = 0.1f;  //   el tiemp asignado para restar 
@@ -33,10 +34,11 @@ public class Stats : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+        SetText();
         if (game == true)
         {
 
-            SetText();
+            
 
 
             if (Time.time > nextActionTimeVar && lost == false)
@@ -67,22 +69,27 @@ public class Stats : MonoBehaviour {
                     game = false;
                 }
                 else
-                    UnityEngine.Debug.Log(parcial);
+                    UnityEngine.Debug.Log( "Parcial: " + parcial);
             }
 
 
         }
-        else if (lost == false)
-            UnityEngine.Debug.Log("Game Over Mate");
-        else
-            UnityEngine.Debug.Log("Llego a zero algun stat");
+        
         
     }
 
 
     void SetText()
     {
-        variablesText.text = "Money: " + money.ToString() + "/ 100   Grades: " + grades.ToString() + "/100   Party: " + party.ToString() + " / 100   Sleep: " + sleep.ToString() + " / 100";
-
+        if (game == true){
+            variablesText.text = "Money: " + money.ToString() + "/ 100   Grades: " + grades.ToString() + "/100   Party: " + party.ToString() + " / 100   Sleep: " + sleep.ToString() + " / 100";
+            partialText.text = "Partial: " + (parcial+1).ToString();
+        } else
+        {
+            if (lost == false)
+                variablesText.text = "Congratulations , you have finished the Semester ";
+            else
+                variablesText.text = "Sorry you were expelled from Itesm";
+        }
     }
 }
