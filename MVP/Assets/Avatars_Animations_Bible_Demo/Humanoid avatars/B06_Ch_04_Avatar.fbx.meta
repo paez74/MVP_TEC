@@ -1,0 +1,171 @@
+fileFormatVersion: 2
+guid: 7f1972951ac6fc345881da2aa3dc3442
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Batch_06
+    100004: Batch_06_Ch_04_Avatar
+    100006: Extra2_J
+    100008: Extra_J
+    100010: Head_Jnt_01
+    100012: L_Ankle_J
+    100014: L_Ball_J
+    100016: L_Hip_J
+    100018: L_Knee_J
+    100020: L_Toe_J
+    100022: Left_Clavicle_Jnt
+    100024: Left_Elbow_Jnt
+    100026: Left_Fingers_02_Jnt
+    100028: Left_Fingers_Jnt_01
+    100030: Left_Shoulder_Jnt
+    100032: Left_Thumb_Jnt_01
+    100034: Left_Thumb_Jnt_02
+    100036: Left_Wrist_Jnt
+    100038: Pelvis_Jnt
+    100040: R_Ankle_J
+    100042: R_Ball_J
+    100044: R_Hip_J
+    100046: R_Knee_J
+    100048: R_Toe_J
+    100050: Right_Clavicle_Jnt
+    100052: Right_Elbow_Jnt
+    100054: Right_Fingers_02_Jnt
+    100056: Right_Fingers_Jnt_01
+    100058: Right_Shoulder_Jnt
+    100060: Right_Thumb_Jnt_01
+    100062: Right_Thumb_Jnt_02
+    100064: Right_Wrist_Jnt
+    100066: Root_Jnt
+    100068: Scater
+    100070: Spine_01_J
+    100072: Spine_02_J
+    400000: //RootNode
+    400002: Batch_06
+    400004: Batch_06_Ch_04_Avatar
+    400006: Extra2_J
+    400008: Extra_J
+    400010: Head_Jnt_01
+    400012: L_Ankle_J
+    400014: L_Ball_J
+    400016: L_Hip_J
+    400018: L_Knee_J
+    400020: L_Toe_J
+    400022: Left_Clavicle_Jnt
+    400024: Left_Elbow_Jnt
+    400026: Left_Fingers_02_Jnt
+    400028: Left_Fingers_Jnt_01
+    400030: Left_Shoulder_Jnt
+    400032: Left_Thumb_Jnt_01
+    400034: Left_Thumb_Jnt_02
+    400036: Left_Wrist_Jnt
+    400038: Pelvis_Jnt
+    400040: R_Ankle_J
+    400042: R_Ball_J
+    400044: R_Hip_J
+    400046: R_Knee_J
+    400048: R_Toe_J
+    400050: Right_Clavicle_Jnt
+    400052: Right_Elbow_Jnt
+    400054: Right_Fingers_02_Jnt
+    400056: Right_Fingers_Jnt_01
+    400058: Right_Shoulder_Jnt
+    400060: Right_Thumb_Jnt_01
+    400062: Right_Thumb_Jnt_02
+    400064: Right_Wrist_Jnt
+    400066: Root_Jnt
+    400068: Scater
+    400070: Spine_01_J
+    400072: Spine_02_J
+    4300000: Batch_06_Ch_04_Avatar
+    9500000: //RootNode
+    11100000: //RootNode
+    13700000: Batch_06_Ch_04_Avatar
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Santhosh_pending_rigs_lambert2
+    second: {fileID: 2100000, guid: ff0eeaceb189f8c458fc573cf4a16a3e, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 0
+    importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 1
+    skeletonHasParents: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 1
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
