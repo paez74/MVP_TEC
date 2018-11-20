@@ -53,7 +53,7 @@ public class Player : MonoBehaviour {
     // cuando el jugador no esta chocando con el NPC
     void OnTriggerExit(Collider other)
     {
-        if(other.tag == "NPC")
+        if(other.tag == "NPC" || other.tag == "LabNPC")
         {
             triggering = false;
             triggeringNPC = null; 

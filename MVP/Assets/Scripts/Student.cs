@@ -21,6 +21,18 @@ public class Student : MonoBehaviour {
     void OnEnable()
     {
         agent = GetComponent<NavMeshAgent>();
+        if (agent.enabled && !agent.isOnNavMesh)
+        {
+            var position = RandomNavSphere(transform.position, radius, -1);
+            NavMeshHit hit;
+            NavMesh.SamplePosition(position, out hit, 10.0f,-1);
+            position = hit.position; // usually this barely changes, if at all
+            agent.Warp(position);
+            agent = GetComponent<NavMeshAgent>();
+        }
+       
+       
+        print(agent);
         anim = GetComponent<Animation>();
         
         currentTimer = timer;
@@ -41,6 +53,7 @@ public class Student : MonoBehaviour {
 
         if (currentTimer >= timer && !idle)
         {
+
             // se selecciona una nueva ruta despues de cierto tiempo para que el NPC siempre este caminando
             Vector3 newPosition = RandomNavSphere(transform.position, radius, -1);
             agent.SetDestination(newPosition);
@@ -48,7 +61,7 @@ public class Student : MonoBehaviour {
         }
         if (idle)
         {
-            anim.CrossFade("GolfIdle");
+            anim.CrossFade("Idle_01");
         }else
         {
             anim.CrossFade("jog 2h");
